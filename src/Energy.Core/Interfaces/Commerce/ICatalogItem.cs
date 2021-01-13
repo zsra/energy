@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Energy.Core.Directors
+namespace Energy.Core.Interfaces.Commerce
 {
-    public class ShipmentBuildDirector
+    public interface ICatalogItem
     {
     }
 }

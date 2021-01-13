@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Energy.Core.Builder
+namespace Energy.Core.Interfaces.Commerce
 {
-    public class OrderBuilder
+    public interface IShipment
     {
     }
 }

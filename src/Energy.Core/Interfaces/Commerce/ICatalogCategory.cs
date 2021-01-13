@@ -1,6 +1,6 @@
 ﻿namespace Energy.Core.Interfaces
 {
-    public interface ICatalogCategory
+    public interface ICatalogCategory.Commerce
     {
     }
 }

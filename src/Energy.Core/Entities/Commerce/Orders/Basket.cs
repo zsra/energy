@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Energy.Core.Entities.Orders
+namespace Energy.Core.Entities.Commerce.Orders
 {
-    public class Shipment : Entity
+    public class Basket : Entity
     {
     }
 }

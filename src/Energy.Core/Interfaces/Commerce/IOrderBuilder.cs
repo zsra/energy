@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Energy.Core.Interfaces
+namespace Energy.Core.Interfaces.Commerce
 {
-    public interface IBasket
+    public interface IOrderBuilder
     {
     }
 }

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Energy.Core.Entities.Orders
+namespace Energy.Core.Directors.Commerce
 {
-    public class Order : Entity
+    public class OrderBuildDirector
     {
     }
 }

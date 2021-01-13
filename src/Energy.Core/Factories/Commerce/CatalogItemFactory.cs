@@ -1,7 +1,8 @@
-﻿using Energy.Core.Entities.CatalogItems;
+﻿using Energy.Core.Entities.Commerce.CatalogItems;
 using Energy.Core.Interfaces;
+using Energy.Core.Interfaces.Commerce;
 
-namespace Energy.Core.Factories
+namespace Energy.Core.Factories.Commerce
 {
     public enum CatalogItemType
     {
@@ -11,7 +12,7 @@ namespace Energy.Core.Factories
 
     public class CatalogItemFactory
     {
-        public ICatalogItem GetCatalogItem(CatalogItemType catalogItemType) => catalogItemType switch
+        public ICatalogItem GetCatalogItem( CatalogItemType catalogItemType ) => catalogItemType switch
         {
             CatalogItemType.Product => new Product(),
             CatalogItemType.Service => new Service(),
