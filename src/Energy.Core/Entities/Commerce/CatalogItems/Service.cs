@@ -2,6 +2,7 @@
 using Energy.Core.Interfaces.Commerce;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace Energy.Core.Entities.Commerce.CatalogItems
 {
@@ -15,8 +16,7 @@ namespace Energy.Core.Entities.Commerce.CatalogItems
         public SubscriptionType SubscriptionType { get; set; }
         public IDictionary<string, string> Properties { get; set; }
 
-        public string CategoryId { get; set; }
         public Category Category { get; set; }
-        public virtual ICollection<Review> Reviews { get; set; }
+        public virtual ICollection<Review> Reviews { get; set; } = new Collection<Review>();
     }
 }

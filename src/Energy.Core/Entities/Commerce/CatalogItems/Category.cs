@@ -1,5 +1,6 @@
 ﻿using Energy.Core.Interfaces.Commerce;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace Energy.Core.Entities.Commerce.CatalogItems
 {
@@ -8,9 +9,15 @@ namespace Energy.Core.Entities.Commerce.CatalogItems
         public string Name { get; set; }
         public string Description { get; set; }
 
-        public string ParentId { get; set; }
         public Category Parent { get; set; }
-        public ICollection<Category> Children { get; set; }
-        public virtual IList<ICatalogItem> CatalogItems { get; set; }
+        public ICollection<Category> Children { get; set; } = new Collection<Category>();
+        public virtual IList<ICatalogItem> CatalogItems { get; set; } = new List<ICatalogItem>();
+
+        public Category(string name, string description, Category parent)
+        {
+            Name = name;
+            Description = description;
+            Parent = parent;
+        }
     }
 }

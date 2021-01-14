@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Energy.Core.Interfaces.Commerce
+namespace Energy.Core.Entities.Commerce.Orders
 {
-    public interface IShipment
+    public class Payment : Entity
     {
+
     }
 }

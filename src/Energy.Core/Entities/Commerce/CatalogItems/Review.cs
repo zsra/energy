@@ -12,9 +12,7 @@ namespace Energy.Core.Entities.Commerce.CatalogItems
         public string Description { get; set; }
         public uint NumberOfUpvotes { get; set; }
 
-        public string CustomerId { get; set; }
         public Customer Customer { get; set; }
-        public string ProductId { get; set; }
         public ICatalogItem CatalogItem { get; set; }
     }
 }
