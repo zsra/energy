@@ -2,7 +2,7 @@
 using Energy.Core.Entities.UserManagement;
 using Energy.Core.Interfaces.Commerce;
 
-namespace Energy.Core.Directors.Commerce
+namespace Energy.Core.Extensions.Directors
 {
     public class OrderBuildDirector
     {

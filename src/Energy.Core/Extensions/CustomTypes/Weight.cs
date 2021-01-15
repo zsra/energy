@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Energy.Core.Extensions.Commerce.CustomTypes
+﻿namespace Energy.Core.Extensions.CustomTypes
 {
     public enum WeightType
     {

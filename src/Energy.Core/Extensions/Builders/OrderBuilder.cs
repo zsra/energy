@@ -2,7 +2,7 @@
 using Energy.Core.Entities.UserManagement;
 using Energy.Core.Interfaces.Commerce;
 
-namespace Energy.Core.Builder.Commerce
+namespace Energy.Core.Extensions.Builder
 {
     public class OrderBuilder : IOrderBuilder
     {

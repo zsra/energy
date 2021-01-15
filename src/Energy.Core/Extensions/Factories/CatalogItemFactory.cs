@@ -1,8 +1,7 @@
 ﻿using Energy.Core.Entities.Commerce.CatalogItems;
-using Energy.Core.Interfaces;
 using Energy.Core.Interfaces.Commerce;
 
-namespace Energy.Core.Factories.Commerce
+namespace Energy.Core.Extensions.Factories
 {
     public enum CatalogItemType
     {

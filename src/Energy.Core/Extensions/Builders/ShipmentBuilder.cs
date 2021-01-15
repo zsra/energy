@@ -1,10 +1,10 @@
 ﻿using Energy.Core.Entities.Commerce.Orders;
 using Energy.Core.Entities.UserManagement;
-using Energy.Core.Extensions.Commerce.CustomTypes;
+using Energy.Core.Extensions.CustomTypes;
 using Energy.Core.Interfaces.Commerce;
 using System;
 
-namespace Energy.Core.Builders.Commerce
+namespace Energy.Core.Extensions.Builders
 {
     public class ShipmentBuilder : IShipmentBuilder
     {

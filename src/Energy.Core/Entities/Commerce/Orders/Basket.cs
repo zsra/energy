@@ -1,5 +1,4 @@
 ﻿using Energy.Core.Entities.UserManagement;
-using Energy.Core.Interfaces.Commerce;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 

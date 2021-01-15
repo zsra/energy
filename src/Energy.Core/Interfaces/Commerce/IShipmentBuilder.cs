@@ -1,6 +1,6 @@
 ﻿using Energy.Core.Entities.Commerce.Orders;
 using Energy.Core.Entities.UserManagement;
-using Energy.Core.Extensions.Commerce.CustomTypes;
+using Energy.Core.Extensions.CustomTypes;
 
 namespace Energy.Core.Interfaces.Commerce
 {

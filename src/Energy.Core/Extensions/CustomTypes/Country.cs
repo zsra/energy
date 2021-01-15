@@ -1,4 +1,4 @@
-﻿namespace Energy.Core.Extensions.Commerce.CustomTypes
+﻿namespace Energy.Core.Extensions.CustomTypes
 {
     public class Country
     {

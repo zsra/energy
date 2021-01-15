@@ -1,10 +1,7 @@
 ﻿using Energy.Core.Entities.UserManagement;
 using Energy.Core.Interfaces.UserManagement;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Energy.Core.Factories.UserManagement
+namespace Energy.Core.Extensionss.Factories
 {
     public enum UserType
     {

@@ -1,4 +1,4 @@
-﻿using Energy.Core.Extensions.Commerce.CustomTypes;
+﻿using Energy.Core.Extensions.CustomTypes;
 using Energy.Core.Interfaces.Commerce;
 using System;
 using System.Collections.Generic;
