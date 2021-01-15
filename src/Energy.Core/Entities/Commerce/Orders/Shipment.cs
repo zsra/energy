@@ -5,7 +5,6 @@ namespace Energy.Core.Entities.Commerce.Orders
 {
     public class Shipment : Entity
     {
-
         public Address Address { get; }
         public Order Order { get; }
         public Customer Customer { get; }
