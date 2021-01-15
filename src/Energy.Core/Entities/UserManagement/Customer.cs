@@ -5,6 +5,7 @@ using System.Text;
 
 namespace Energy.Core.Entities.UserManagement
 {
+
     public class Customer : Entity, IUser
     {
     }

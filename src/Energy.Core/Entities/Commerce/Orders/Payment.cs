@@ -6,6 +6,6 @@ namespace Energy.Core.Entities.Commerce.Orders
 {
     public class Payment : Entity
     {
-
+        
     }
 }
