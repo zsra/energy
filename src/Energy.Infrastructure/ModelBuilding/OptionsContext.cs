@@ -11,7 +11,7 @@ namespace Energy.Infrastructure.ModelBuilding
         #region Configuration
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
             => optionsBuilder.UseCosmos(
-                ConfigurationManager.AppSettings["PrimaryCOnnectionString"],
+                ConfigurationManager.AppSettings["PrimaryConnectionString"],
                 databaseName: ConfigurationManager.AppSettings["OptionDatabaseName"],
                 options =>
                 {

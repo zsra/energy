@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ModelBuilding\" />
+    <ProjectReference Include="..\Energy.Core\Energy.Core.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,5 @@
 ﻿using Energy.Core.Entities.UserManagement;
-using Energy.Core.Interfaces.Commerce;
+using Energy.Core.Interfaces.Entities;
 using System;
 
 namespace Energy.Core.Entities.Commerce.CatalogItems

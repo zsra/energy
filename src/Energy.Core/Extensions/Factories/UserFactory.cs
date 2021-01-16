@@ -1,5 +1,5 @@
 ﻿using Energy.Core.Entities.UserManagement;
-using Energy.Core.Interfaces.UserManagement;
+using Energy.Core.Interfaces.Entities;
 
 namespace Energy.Core.Extensionss.Factories
 {

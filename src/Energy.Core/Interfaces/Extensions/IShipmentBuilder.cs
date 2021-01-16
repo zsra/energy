@@ -2,7 +2,7 @@
 using Energy.Core.Entities.UserManagement;
 using Energy.Core.Extensions.CustomTypes;
 
-namespace Energy.Core.Interfaces.Commerce
+namespace Energy.Core.Interfaces.Extensions
 {
     public interface IShipmentBuilder
     {

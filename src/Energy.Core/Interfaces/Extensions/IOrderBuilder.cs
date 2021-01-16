@@ -1,7 +1,7 @@
 ﻿using Energy.Core.Entities.Commerce.Orders;
 using Energy.Core.Entities.UserManagement;
 
-namespace Energy.Core.Interfaces.Commerce
+namespace Energy.Core.Interfaces.Extensions
 {
     public interface IOrderBuilder
     {

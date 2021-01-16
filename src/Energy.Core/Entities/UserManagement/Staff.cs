@@ -1,4 +1,4 @@
-﻿using Energy.Core.Interfaces.UserManagement;
+﻿using Energy.Core.Interfaces.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;

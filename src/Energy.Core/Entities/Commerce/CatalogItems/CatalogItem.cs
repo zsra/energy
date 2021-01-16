@@ -1,12 +1,11 @@
 ﻿using Energy.Core.Extensions.CustomTypes;
-using Energy.Core.Interfaces.Commerce;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
 namespace Energy.Core.Entities.Commerce.CatalogItems
 {
-    public class Product : Entity, ICatalogItem
+    public class CatalogItem : Entity
     {
         public string Name { get; set; }
         public string Description { get; set; }
@@ -20,7 +19,7 @@ namespace Energy.Core.Entities.Commerce.CatalogItems
         public Dimension Dimension { get; set; }
         public IDictionary<string, string> Properties { get; set; }
 
-        public Category Category { get; set; }
+        public CatalogCategory Category { get; set; }
         public virtual ICollection<Review> Reviews { get; set; } = new Collection<Review>();
     }
 }
