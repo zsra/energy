@@ -6,6 +6,11 @@
 
   <ItemGroup>
     <Folder Include="Exceptions\" />
+    <Folder Include="Specifications\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Threading.Tasks" Version="4.3.0" />
   </ItemGroup>
 
 </Project>
