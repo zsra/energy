@@ -7,12 +7,11 @@ namespace Energy.Web.Configuration
 {
     public static class ConfigureCoreServices
     {
-        public static IServiceCollection AddCoreServices(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddCoreServices(this IServiceCollection services
+            , IConfiguration configuration)
         {
             services.AddScoped<ICatalogService, CatalogService>();
             return services;
         }
-
-
     }
 }

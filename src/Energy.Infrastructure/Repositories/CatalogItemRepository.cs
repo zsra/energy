@@ -2,6 +2,7 @@
 using Energy.Core.Interfaces.Repositories;
 using Energy.Infrastructure.ModelBuilding;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -23,9 +24,10 @@ namespace Energy.Infrastructure.Repositories
             throw new System.NotImplementedException();
         }
 
-        Task<IReadOnlyList<CatalogItem>> IAsyncRepository<CatalogItem>.GetEntitiesAsync(CancellationToken cancellationToken)
+        Task<IEnumerable<CatalogItem>> IAsyncRepository<CatalogItem>.GetEntitiesAsync(CancellationToken cancellationToken)
         {
-            throw new System.NotImplementedException();
+            using var context = new CatalogContext();
+            return Task.FromResult(context.CatalogItems.AsEnumerable());
         }
 
         Task<CatalogItem> IAsyncRepository<CatalogItem>.GetEntityById(string entityId, CancellationToken cancellationToken)
