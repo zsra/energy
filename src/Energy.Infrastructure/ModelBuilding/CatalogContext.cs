@@ -1,4 +1,4 @@
-﻿using Energy.Core.Entities.Commerce.CatalogItems;
+﻿using Energy.Core.Entities.CatalogItems;
 using Microsoft.EntityFrameworkCore;
 using System.Configuration;
 

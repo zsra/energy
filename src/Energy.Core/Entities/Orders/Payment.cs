@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Energy.Core.Entities.Commerce.Orders
+namespace Energy.Core.Entities.Orders
 {
     public class Payment : Entity
     {

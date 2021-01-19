@@ -1,6 +1,6 @@
 ﻿using Energy.Core.Entities.Commerce.CatalogItems;
 
-namespace Energy.Core.Entities.Commerce.Orders
+namespace Energy.Core.Entities.Orders
 {
     public class BasketItem : Entity
     {

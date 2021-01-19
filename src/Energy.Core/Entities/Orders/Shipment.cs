@@ -1,7 +1,7 @@
 ﻿using Energy.Core.Entities.UserManagement;
 using Energy.Core.Extensions.CustomTypes;
 
-namespace Energy.Core.Entities.Commerce.Orders
+namespace Energy.Core.Entities.Orders
 {
     public class Shipment : Entity
     {

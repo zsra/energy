@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace Energy.Core.Entities.Commerce.Orders
+namespace Energy.Core.Entities.Orders
 {
     public class Basket : Entity
     {

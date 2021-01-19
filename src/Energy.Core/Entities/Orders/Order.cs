@@ -1,6 +1,6 @@
 ﻿using Energy.Core.Entities.UserManagement;
 
-namespace Energy.Core.Entities.Commerce.Orders
+namespace Energy.Core.Entities.Orders
 {
     public class Order : Entity
     {

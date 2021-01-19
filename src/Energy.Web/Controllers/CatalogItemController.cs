@@ -1,4 +1,4 @@
-﻿using Energy.Core.Entities.Commerce.CatalogItems;
+﻿using Energy.Core.Entities.CatalogItems;
 using Energy.Core.Interfaces.Services;
 using Energy.Web.Converters;
 using Energy.Web.ViewModels;
@@ -9,6 +9,8 @@ using System.Linq;
 
 namespace Energy.Web.Controllers
 {
+    [ApiController]
+    [Route("[catalog]")]
     public class CatalogItemController : ControllerBase
     {
         private readonly ILogger<CatalogItemController> _logger;
@@ -23,8 +25,14 @@ namespace Energy.Web.Controllers
         [HttpGet]
         public IEnumerable<CatalogItemViewModel> GetCatalog()
         {
-            IEnumerable<CatalogItem> item = _catalogService.GetAllCatalogItem().Result;
-            return item.Select(i => CatalogConverter.EntityToViewModel(i)).ToArray();
+            IEnumerable<CatalogItem> items = _catalogService.GetAllCatalogItem().Result;
+            return items.Select(i => i.EntityToViewModel()).ToArray();
+        }
+
+        [HttpPost]
+        public void Create([FromBody] CatalogItem catalogItem)
+        {
+            _catalogService.Create(catalogItem);
         }
 
     }

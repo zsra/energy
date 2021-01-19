@@ -1,5 +1,5 @@
 import { Action, Reducer } from 'redux';
-import { AppThunkAction } from './';
+import { AppThunkAction } from '..';
 
 export interface CatalogState {
     IsLoading: boolean;
@@ -28,7 +28,6 @@ type KnownAction = RequestCatalogItemsAction | ReceiveCatalogItemsAction;
 
 export const actionCreators = {
     requestCatalogItemsAction: (): AppThunkAction<KnownAction> => (dispatch, getState) => {
-      
         const appState = getState();
         if (appState && appState.catalogItems) {
             fetch(`catalogitems`)
@@ -36,7 +35,6 @@ export const actionCreators = {
                 .then(data => {
                     dispatch({ type: 'RECEIVE_CATALOG_ITEMS', items : data });
                 });
-
             dispatch({ type: 'REQUEST_CATALOG_ITEMS' });
         }
     }
@@ -63,6 +61,5 @@ export const reducer: Reducer<CatalogState> = (state: CatalogState | undefined, 
             };
             break;
     }
-
     return state;
 };

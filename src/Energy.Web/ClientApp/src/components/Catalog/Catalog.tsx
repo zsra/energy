@@ -2,9 +2,9 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import { RouteComponentProps } from 'react-router';
 import { Link } from 'react-router-dom';
-import { ApplicationState } from '../store';
+import { ApplicationState } from '../../store';
 // import * as WeatherForecastsStore from '../store/WeatherForecasts';
-import * as CatalogStore from '../store/Catalog';
+import * as CatalogStore from '../../store/catalog/Catalog';
 
 type CatalogProps = CatalogStore.CatalogState 
     & typeof CatalogStore.actionCreators
@@ -15,7 +15,7 @@ type CatalogProps = CatalogStore.CatalogState
 //   & typeof WeatherForecastsStore.actionCreators // ... plus action creators we've requested
 //   & RouteComponentProps<{ startDateIndex: string }>; // ... plus incoming routing parameters
 
-class FetchData extends React.PureComponent<CatalogProps> {
+class Catalog extends React.PureComponent<CatalogProps> {
 
   public componentDidMount() {
     this.ensureDataFetched();
@@ -47,14 +47,21 @@ class FetchData extends React.PureComponent<CatalogProps> {
       </thead>
       <tbody>
           {this.props.Catalog.map((items: CatalogStore.CatalogItemViewModel) =>
-          <tr key={items.Id}>
-            <td>{items.Name}</td>
-          </tr>          )}
+            <tr key={items.Id}>
+              <td>{items.Name}</td>
+            </tr>
+          )}
       </tbody>
     </table>
     ); 
   }
 }
+
+export default connect(
+  (state: ApplicationState) => state.catalogItems,
+  CatalogStore.actionCreators
+)(Catalog as any);
+
 
 // class FetchData extends React.PureComponent<WeatherForecastProps> {
 //   // This method is called when the component is first added to the document

@@ -2,16 +2,17 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations;
 
-namespace Energy.Core.Entities.Commerce.CatalogItems
+namespace Energy.Core.Entities.CatalogItems
 {
     public class CatalogItem : Entity
     {
+        [Required]
         public string Name { get; set; }
         public string Description { get; set; }
         public string Brand { get; set; }
         public decimal? Price { get; set; }
-        public decimal? VAT { get; set; }
         public ICollection<string> PictureUris { get; set; }
         public DateTime? CreatedAt { get; set; }
         public DateTime? AvailableFrom { get; set; }

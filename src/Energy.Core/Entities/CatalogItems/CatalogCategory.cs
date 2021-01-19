@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace Energy.Core.Entities.Commerce.CatalogItems
+namespace Energy.Core.Entities.CatalogItems
 {
     public class CatalogCategory : Entity
     {

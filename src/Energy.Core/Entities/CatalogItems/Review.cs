@@ -2,7 +2,7 @@
 using Energy.Core.Interfaces.Entities;
 using System;
 
-namespace Energy.Core.Entities.Commerce.CatalogItems
+namespace Energy.Core.Entities.CatalogItems
 {
     public class Review : Entity
     {

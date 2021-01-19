@@ -1,4 +1,4 @@
-import * as Catalog from './Catalog';
+import * as Catalog from './catalog/Catalog';
 import * as Counter from './Counter';
 
 // The top-level state object

@@ -1,4 +1,4 @@
-﻿using Energy.Core.Entities.Commerce.CatalogItems;
+﻿using Energy.Core.Entities.CatalogItems;
 using Energy.Web.ViewModels;
 using System.Linq;
 
@@ -6,7 +6,7 @@ namespace Energy.Web.Converters
 {
     public static  class CatalogConverter
     {
-        public static CatalogItemViewModel EntityToViewModel(CatalogItem catalogItem) => new CatalogItemViewModel
+        public static CatalogItemViewModel EntityToViewModel(this CatalogItem catalogItem) => new CatalogItemViewModel
         {
             Id = catalogItem.Id,
             Brand = catalogItem.Brand,
