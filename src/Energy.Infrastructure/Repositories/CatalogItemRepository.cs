@@ -26,10 +26,11 @@ namespace Energy.Infrastructure.Repositories
             throw new System.NotImplementedException();
         }
 
-        async Task IAsyncRepository<CatalogItem>.DeleteAsync(CatalogItem entity, CancellationToken cancellationToken)
+        async Task IAsyncRepository<CatalogItem>.DeleteAsync(string entityId, CancellationToken cancellationToken)
         {
             using var context = new CatalogContext();
-            context.CatalogItems.Remove(entity);
+            CatalogItem catalogItem = context.CatalogItems.FirstOrDefault(item => item.Id == entityId);
+            context.CatalogItems.Remove(catalogItem);
             await context.SaveChangesAsync();
         }
 
@@ -44,7 +45,7 @@ namespace Energy.Infrastructure.Repositories
             return Task.FromResult(context.CatalogItems.AsEnumerable());
         }
 
-        Task<CatalogItem> IAsyncRepository<CatalogItem>.GetEntityById(string entityId, CancellationToken cancellationToken)
+        Task<CatalogItem> IAsyncRepository<CatalogItem>.GetEntityByIdAsync(string entityId, CancellationToken cancellationToken)
         {
             using var context = new CatalogContext();
             return Task.FromResult(context.CatalogItems.Find(entityId));
@@ -53,7 +54,8 @@ namespace Energy.Infrastructure.Repositories
         async Task<CatalogItem> IAsyncRepository<CatalogItem>.UpdateAsync(CatalogItem entity, CancellationToken cancellationToken)
         {
             using var context = new CatalogContext();
-            context.CatalogItems.Update(entity);
+            CatalogItem catalogItem = context.CatalogItems.FirstOrDefault(item => item.Id == entity.Id);
+            context.CatalogItems.Update(catalogItem);
             await context.SaveChangesAsync();
             return entity;
         }
