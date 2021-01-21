@@ -13,6 +13,8 @@ namespace Energy.Core.Entities.CatalogItems
         public ICollection<CatalogCategory> Children { get; set; } = new Collection<CatalogCategory>();
         public virtual IList<CatalogItem> CatalogItems { get; set; } = new List<CatalogItem>();
 
+        public CatalogCategory() { }
+
         public CatalogCategory(string name, string description, CatalogCategory parent)
         {
             Name = name;

@@ -1,4 +1,4 @@
-﻿using Energy.Core.Entities.Commerce.Orders;
+﻿using Energy.Core.Entities.Orders;
 using Energy.Core.Entities.UserManagement;
 
 namespace Energy.Core.Interfaces.Extensions

@@ -1,5 +1,4 @@
 ﻿using Energy.Core.Entities.UserManagement;
-using Energy.Core.Interfaces.Entities;
 using System;
 
 namespace Energy.Core.Entities.CatalogItems
@@ -13,6 +12,6 @@ namespace Energy.Core.Entities.CatalogItems
         public uint NumberOfUpvotes { get; set; }
 
         public Customer Customer { get; set; }
-        public ICatalogItem CatalogItem { get; set; }
+        public CatalogItem CatalogItem { get; set; }
     }
 }

@@ -13,14 +13,14 @@ namespace Energy.Core.Entities.CatalogItems
         public string Description { get; set; }
         public string Brand { get; set; }
         public decimal? Price { get; set; }
-        public ICollection<string> PictureUris { get; set; }
+        public List<string> PictureUris { get; set; }
         public DateTime? CreatedAt { get; set; }
         public DateTime? AvailableFrom { get; set; }
         public Weight Weight { get; set; }
         public Dimension Dimension { get; set; }
-        public IDictionary<string, string> Properties { get; set; }
+        public Dictionary<string, string> Properties { get; set; }
 
         public CatalogCategory Category { get; set; }
-        public virtual ICollection<Review> Reviews { get; set; } = new Collection<Review>();
+        public virtual List<Review> Reviews { get; set; } = new List<Review>();
     }
 }

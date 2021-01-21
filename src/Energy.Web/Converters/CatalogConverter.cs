@@ -4,9 +4,10 @@ using System.Linq;
 
 namespace Energy.Web.Converters
 {
-    public static  class CatalogConverter
+    public static class CatalogConverter
     {
-        public static CatalogItemViewModel EntityToViewModel(this CatalogItem catalogItem) => new CatalogItemViewModel
+        public static CatalogItemViewModel EntityToViewModel(this CatalogItem catalogItem) 
+            => new CatalogItemViewModel
         {
             Id = catalogItem.Id,
             Brand = catalogItem.Brand,

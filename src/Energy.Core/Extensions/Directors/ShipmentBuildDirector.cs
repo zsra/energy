@@ -1,4 +1,4 @@
-﻿using Energy.Core.Entities.Commerce.Orders;
+﻿using Energy.Core.Entities.Orders;
 using Energy.Core.Entities.UserManagement;
 using Energy.Core.Extensions.CustomTypes;
 using Energy.Core.Interfaces.Extensions;
@@ -7,7 +7,7 @@ namespace Energy.Core.Directors
 {
     public class ShipmentBuildDirector
     {
-        private IShipmentBuilder _builder;
+        private readonly IShipmentBuilder _builder;
 
         public ShipmentBuildDirector(IShipmentBuilder builder) => _builder = builder;
 

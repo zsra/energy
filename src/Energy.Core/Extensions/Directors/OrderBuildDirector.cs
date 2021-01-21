@@ -1,4 +1,4 @@
-﻿using Energy.Core.Entities.Commerce.Orders;
+﻿using Energy.Core.Entities.Orders;
 using Energy.Core.Entities.UserManagement;
 using Energy.Core.Interfaces.Extensions;
 
@@ -6,7 +6,7 @@ namespace Energy.Core.Extensions.Directors
 {
     public class OrderBuildDirector
     {
-        private IOrderBuilder _builder;
+        private readonly IOrderBuilder _builder;
         
         public OrderBuildDirector(IOrderBuilder builder) => _builder = builder;
 
